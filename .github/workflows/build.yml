@@ -31,8 +31,8 @@ jobs:
           sed -i 's/<application/<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" \/>\n    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" \/>\n    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" \/>\n    <application/g' android/app/src/main/AndroidManifest.xml
 
           # Unlock Programmatic Video Playback in Android WebView
-          cat << 'EOF' > android/app/src/main/java/com/raj/sentencerepeater/MainActivity.java
-          package com.raj.sentencerepeater;
+          cat << 'EOF' > android/app/src/main/java/com/rajj/sentencerepeater/MainActivity.java
+          package com.rajj.sentencerepeater;
 
           import android.os.Bundle;
           import com.getcapacitor.BridgeActivity;
